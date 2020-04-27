@@ -5,6 +5,9 @@ namespace App\Model;
 use Illuminate\Database\Eloquent\Model;
 use App\User;
 
+/**
+ * @method static where(string $string, string $string1, string $string2)
+ */
 class Company extends Model
 {
     protected $fillable = [
