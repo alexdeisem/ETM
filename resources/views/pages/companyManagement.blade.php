@@ -1,4 +1,4 @@
-<!-- 
+<!--
 =========================================================
  Light Bootstrap Dashboard - v2.0.1
 =========================================================
@@ -30,28 +30,28 @@
          <link href="{{ asset('light-bootstrap/css/light-bootstrap-dashboard.css?v=2.0.0') }} " rel="stylesheet" />
          <!-- CSS Just for demo purpose, don't include it in your project -->
          <link href="{{ asset('light-bootstrap/css/demo.css') }}" rel="stylesheet" />
- 
+
          <!-- Canonical SEO -->
          <link rel="canonical" href="https://www.creative-tim.com/product/light-bootstrap-dashboard-laravel" />        <!--  Social tags      -->
          <meta name="keywords" content="design system, dashboard, bootstrap 4 dashboard, bootstrap 4 design, bootstrap 4 system, bootstrap 4, bootstrap 4 uit kit, bootstrap 4 kit, light bootstrap, light bootstrap dashboard, creative tim,updivision, html dashboard, html css template, web template, bootstrap, bootstrap 4, css3 template, frontend, responsive bootstrap template, bootstrap dashboard, responsive dashboard, laravel, laravel php, laravel php framework, free laravel admin template, free laravel admin, free laravel admin template + Front End + CRUD, crud laravel php, crud laravel, laravel backend admin dashboard">
          <meta name="description" content="Start your development with a Bootstrap 4 Admin Dashboard built for Laravel Framework 5.5 and Up.">
- 
- 
+
+
          <!-- Schema.org markup for Google+ -->
          <meta itemprop="name" content="Light Bootstrap Dashboard Laravel by Creative Tim & UPDIVISION">
          <meta itemprop="description" content="Start your development with a Bootstrap 4 Admin Dashboard built for Laravel Framework 5.5 and Up.">
- 
+
          <meta itemprop="image" content="https://s3.amazonaws.com/creativetim_bucket/products/213/opt_lbd_laravel_thumbnail.jpg">
- 
+
          <!-- Twitter Card data -->
          <meta name="twitter:card" content="product">
          <meta name="twitter:site" content="@creativetim">
          <meta name="twitter:title" content="Light Bootstrap Dashboard Laravel by Creative Tim & UPDIVISION">
- 
+
          <meta name="twitter:description" content="Start your development with a Bootstrap 4 Admin Dashboard built for Laravel Framework 5.5 and Up.">
          <meta name="twitter:creator" content="@creativetim">
          <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/213/opt_lbd_laravel_thumbnail.jpg">
- 
+
          <!-- Open Graph data -->
          <meta property="fb:app_id" content="655968634437471">
          <meta property="og:title" content="Light Bootstrap Dashboard Laravel by Creative Tim & UPDIVISION" />
@@ -67,7 +67,7 @@
          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
          })(window,document,'script','dataLayer','GTM-NKDMSK6');</script>
          <!-- End Google Tag Manager -->
-     
+
          <script>
              // Facebook Pixel Code Don't Delete
                ! function(f, b, e, v, n, t, s) {
@@ -96,7 +96,7 @@
                }
          </script>
      </head>
- 
+
 
 <body class="clickup-chrome-ext_installed">
     <!-- Google Tag Manager (noscript) -->
@@ -112,13 +112,13 @@
         <div class="sidebar" data-image="{{ asset('light-bootstrap/img/sidebar-5.jpg') }}">
             <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
-        
+
         Tip 2: you can also add an image using data-image tag
         -->
             <div class="sidebar-wrapper">
                 <div class="logo">
-                    <a href="http://www.creative-tim.com" class="simple-text">
-                        {{ __("Creative Tim") }}
+                    <a href="http://127.0.0.1:8000" class="simple-text">
+                        ETM
                     </a>
                 </div>
                 <ul class="nav">
@@ -128,17 +128,8 @@
                             <p>{{ __("Dashboard") }}</p>
                         </a>
                     </li>
-                   
+
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#laravelExamples" aria-expanded="true">
-                            <i>
-                                <img src="{{ asset('light-bootstrap/img/laravel.svg') }}" style="width:25px">
-                            </i>
-                            <p>
-                                {{ __('Laravel example') }}
-                                <b class="caret"></b>
-                            </p>
-                        </a>
                         <div class="collapse  show " id="laravelExamples">
                             <ul class="nav">
                                 <li class="nav-item ">
@@ -150,31 +141,20 @@
                                 <li class="nav-item  active">
                                     <a class="nav-link" href="{{route('user.index')}}">
                                         <i class="nc-icon nc-circle-09"></i>
-                                        <p>{{ __("User Management") }}</p>
+                                        <p>Company management</p>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </li>
-        
+
                     <li class="nav-item ">
                         <a class="nav-link" href="{{route('page.index', 'table')}}">
                             <i class="nc-icon nc-notes"></i>
                             <p>{{ __("Table List") }}</p>
                         </a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="{{route('page.index', 'typography')}}">
-                            <i class="nc-icon nc-paper-2"></i>
-                            <p>{{ __("Typography") }}</p>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="{{route('page.index', 'icons')}}">
-                            <i class="nc-icon nc-atom"></i>
-                            <p>{{ __("Icons") }}</p>
-                        </a>
-                    </li>
+
                     <li class="nav-item ">
                         <a class="nav-link" href="{{route('page.index', 'maps')}}">
                             <i class="nc-icon nc-pin-3"></i>
@@ -270,7 +250,7 @@
         </li>
     </ul>
 </div>
-</div>            
+</div>
         <div class=" main-panel ">
             <nav class="navbar navbar-expand-lg " color-on-scroll="500">
                 <div class="container-fluid">
@@ -282,26 +262,8 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navigation">
                         <ul class="nav navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link" data-toggle="dropdown">
-                                    <i class="nc-icon nc-palette"></i>
-                                    <span class="d-lg-none">{{ __('Dashboard') }}</span>
-                                </a>
-                            </li>
-                            <li class="dropdown nav-item">
-                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                                    <i class="nc-icon nc-planet"></i>
-                                    <span class="notification">5</span>
-                                    <span class="d-lg-none">{{ __('Notification') }}</span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">{{ __('Notification 1') }}</a>
-                                    <a class="dropdown-item" href="#">{{ __('Notification 2') }}</a>
-                                    <a class="dropdown-item" href="#">{{ __('Notification 3') }}3</a>
-                                    <a class="dropdown-item" href="#">{{ __('Notification 4') }}</a>
-                                    <a class="dropdown-item" href="#">{{ __('Another notification') }}</a>
-                                </ul>
-                            </li>
+
+
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="nc-icon nc-zoom-split"></i>
@@ -346,14 +308,17 @@
                     <div class="card-header">
                         <div class="row align-items-center">
                             <div class="col-8">
-                                <h3 class="mb-0">Users</h3>
+                                <h3 class="mb-0">Users and companies</h3>
+                                </br>
                                 <p class="text-sm mb-0">
-                                    This is an example of user management. This is a minimal setup in order to get started fast.
+                                    Здесь можно изменять информацию о пользователях и компаниях.
                                 </p>
                             </div>
                             <div class="col-4 text-right">
                                 <a href="#" class="btn btn-sm btn-default">Add user</a>
+                                <a href="#" class="btn btn-sm btn-default">Add Company</a>
                             </div>
+
                         </div>
                     </div>
 
@@ -365,44 +330,28 @@
                     </div>
                     <div class="card-body table-full-width table-responsive">
                         <table class="table table-hover table-striped">
-                            <thead>
-                                <tr><th>Name</th>
-                                <th>Email</th>
-                                <th>Start</th>
-                                <th>Actions</th>
-                            </tr></thead>
-                            <tfoot>
+                                <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Start</th>
-                                    <th>Actions</th>
+                                    <th scope="col">Company name</th>
+                                    <th scope="col">Action</th>
                                 </tr>
-                            </tfoot>
-                            <tbody>
-                            
-                                                                        <tr>
-                                        <td>Admin Admin</td>
-                                        <td>admin@lightbp.com</td>
-                                        <td>2020-02-25 12:37:04</td>
-                                        <td class="d-flex justify-content-end">
-                                                
-                                                <a href="#"><i class="fa fa-edit"></i></a>
-                                                                                        </td>
-                                    </tr>
-                                                                </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+{{--                                @foreach($companies as $company)--}}
+                                <tr>
+{{--                                    <td>{{$company->name}}</td>--}}
+                                    <td>
+                                        <a href="#"><i class="fa fa-edit"></i></a>
+                                    </td>
+                                </tr>
+{{--                                @endforeach--}}
+                                </tbody>
+                            </table>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="alert alert-danger">
-            <button type="button" aria-hidden="true" class="close" data-dismiss="alert">
-                <i class="nc-icon nc-simple-remove"></i>
-            </button>
-            <span>
-            This is a <b>PRO</b> feature!</span>
-        </div>
+
     </div>
 </div>
             <footer class="footer">
@@ -410,7 +359,7 @@
     <nav>
         <ul class="footer-menu">
             <li>
-                <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
+                <a href="https://www.creative-tim.com" class="nav-link" target="_blank">ETM</a>
             </li>
             <li>
                 <a href="https://www.updivision.com" class="nav-link" target="_blank">Updivision</a>
@@ -434,7 +383,7 @@
 </footer>            </div>
 
     </div>
-   
+
 
 
 
@@ -442,7 +391,7 @@
         <script src="{{ asset('light-bootstrap/js/core/jquery.3.2.1.min.js') }}" type="text/javascript"></script>
         <script src="{{ asset('light-bootstrap/js/core/popper.min.js') }}" type="text/javascript"></script>
         <script src="{{ asset('light-bootstrap/js/core/bootstrap.min.js') }}" type="text/javascript"></script>
-    
+
         <script src="{{ asset('light-bootstrap/js/plugins/jquery.sharrre.js') }}"></script>
         <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
         <script src="{{ asset('light-bootstrap/js/plugins/bootstrap-switch.js') }}"></script>
@@ -459,7 +408,7 @@
         @stack('js')
         <script>
           $(document).ready(function () {
-            
+
             $('#facebook').sharrre({
               share: {
                 facebook: true
@@ -474,7 +423,7 @@
               template: '<i class="fab fa-facebook-f"></i> Facebook',
               url: 'https://light-bootstrap-dashboard-laravel.creative-tim.com/login'
             });
-    
+
             $('#google').sharrre({
               share: {
                 googlePlus: true
@@ -489,7 +438,7 @@
               template: '<i class="fab fa-google-plus"></i> Google',
               url: 'https://light-bootstrap-dashboard-laravel.creative-tim.com/login'
             });
-    
+
             $('#twitter').sharrre({
               share: {
                 twitter: true
@@ -511,4 +460,5 @@
             });
           });
         </script>
+</body>
     </html>
