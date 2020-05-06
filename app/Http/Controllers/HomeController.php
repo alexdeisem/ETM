@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Model\Company;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -17,12 +20,15 @@ class HomeController extends Controller
     }
 
     /**
-     * Show the application dashboard.
+     * Redirect to company home page or to welcome page
      *
-     * @return \Illuminate\Contracts\Support\Renderable
+     * @return \Illuminate\Contracts\Support\Renderable|\Illuminate\Http\RedirectResponse
      */
     public function index()
     {
-        return view('dashboard');
+        if (!Auth::user()) {
+            return view('welcome');
+        };
+        return response()->redirectTo('/' . Auth::user()->company->domain);
     }
 }

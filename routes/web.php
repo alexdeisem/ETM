@@ -31,7 +31,15 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::patch('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
 });
 
-Route::group(['middleware' => 'auth'], function () {
-	Route::get('{page}', ['as' => 'page.index', 'uses' => 'PageController@index']);
+Route::group(['middleware' => 'auth', 'prefix' => '{company_domain}'], function () {
+    Route::get('/', 'CompanyController@index'); // возможно этот роут потом будет обрабатывать другой контроллер
+});
+
+// Тут должна будет быть мидлварка на проверку, что пользователь root.all
+Route::group(['prefix' => 'admin/companies'], function () {
+    Route::get('/', 'CompanyController@show');
+    Route::get('/add', 'CompanyController@getCreateForm');
+    Route::post('/create', 'CompanyController@create');
+    Route::get('/delete/{id}', 'CompanyController@delete');
 });
 
